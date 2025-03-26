@@ -18,20 +18,18 @@
         box-shadow: 0 0 25px -10px #0008;
     }
 
-
     #portada {
         font-size: 3rem;
 
     }
 
-
-
     #portada a {
         font-size: 1.75rem;
-
     }
 
-
+    #quienessomos .contactos {
+        grid-template-columns: 1fr;
+    }
 
 
 }
