@@ -125,10 +125,19 @@ header nav a i {
     height: 100vh;
 }
 
-#servicios h2,
+#servicios h1 {
+    font-size: 2rem;
+}
+
 #servicios h1 {
     color: var(--primary-color);
+    padding: 1rem 2rem;
+}
+
+#servicios h2 {
+    color: var(--primary-color);
     padding: 0 1rem;
+    text-align: center;
 }
 
 
@@ -147,6 +156,12 @@ header nav a i {
     padding: 1rem;
     width: clamp(400px, 100%, 700px);
     margin: 3rem auto;
+    max-height: 400px;
+    /* overflow: hidden; */
+}
+
+#servicios .descripcion {
+    background-color: #fff7;
 }
 
 #servicios .descripcion p {
@@ -163,6 +178,13 @@ header nav a i {
     border-radius: 50px;
     border: solid 1px #fff;
     box-shadow: 0 0 15px -5px #0007;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: min-content auto;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
 
 /*? INSTALACION */
@@ -170,20 +192,23 @@ header nav a i {
 #servicios .img.instalacion {
     background-image: url(../img/instalacion.webp);
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 25% 50%;
     background-repeat: no-repeat;
-    margin-top: -2rem;
+    margin-top: -1rem;
+    margin-left: 1rem;
     /* border: solid 1px blue; */
     border-radius: 10px;
     transform: skewY(-5deg);
     min-height: calc(100% + 8rem);
     border: solid 1px #fff;
     box-shadow: 0 0 15px #0005;
+    width: 130%;
 }
 
 #servicios.instalacion .descripcion {
-    margin-right: -2rem;
+    margin-right: -5rem;
     display: block;
+    min-width: max-content;
 }
 
 /* #servicios .instalacion.img {} */
@@ -210,19 +235,20 @@ header nav a i {
 #servicios .img.mantenimiento {
     background-image: url(../img/mantenimiento.webp);
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 0% 100%;
     background-repeat: no-repeat;
     margin-top: -2rem;
-    /* border: solid 1px blue; */
+    margin-right: 1rem;
     border-radius: 10px;
-    transform: skewY(5deg);
-    min-height: calc(100% + 8rem);
+    height: calc(100% + 8rem);
     border: solid 1px #fff;
     box-shadow: 0 0 15px #0005;
+    width: calc(100% + 5rem);
+    transform: skewY(5deg) translateX(-5rem);
 }
 
 #servicios .mantenimiento .descripcion {
-    margin-right: -2rem;
+    margin-left: 1rem;
     display: block;
 }
 
@@ -234,7 +260,7 @@ header nav a i {
     margin-right: -2rem;
     backdrop-filter: blur(20px);
     border-radius: 10px;
-    background-color: #fff2;
+    /* background-color: #fff2; */
     box-shadow: 0 0 15px #000800;
     border: solid 1px #fff;
     display: block;
@@ -253,15 +279,18 @@ header nav a i {
 #servicios .img.recargas {
     background-image: url(../img/recargas.webp);
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 30% 50%;
     background-repeat: no-repeat;
     margin-top: -2rem;
+    margin-left: 1rem;
     /* border: solid 1px blue; */
     border-radius: 10px;
     transform: skewY(-5deg);
     min-height: calc(100% + 8rem);
     border: solid 1px #fff;
     box-shadow: 0 0 15px #0005;
+    width: 130%;
+
 }
 
 #servicios.recargas .descripcion {
@@ -273,7 +302,7 @@ header nav a i {
 #servicios .recargas .descripcion {
     border: solid 1px #fff;
     margin-left: -2rem;
-    margin-bottom: -2rem;
+    /* margin-bottom: -2rem; */
     padding: 1rem;
     margin-right: 1rem;
     backdrop-filter: blur(20px);
@@ -287,24 +316,27 @@ header nav a i {
 
 #servicios .reparaciones {
     margin-top: 10rem;
+    padding-bottom: 5rem;
 }
 
 #servicios .img.reparaciones {
     background-image: url(../img/reparacion.webp);
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 0% 100%;
     background-repeat: no-repeat;
     margin-top: -2rem;
+    margin-right: 1rem;
     /* border: solid 1px blue; */
     border-radius: 10px;
-    transform: skewY(5deg);
+    transform: skewY(5deg) translateX(-30%);
     min-height: calc(100% + 8rem);
+    width: 130%;
     border: solid 1px #fff;
     box-shadow: 0 0 15px #0005;
 }
 
 #servicios .reparaciones .descripcion {
-    margin-right: -2rem;
+    margin-left: 1rem;
     display: block;
 }
 
