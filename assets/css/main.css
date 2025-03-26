@@ -1,10 +1,9 @@
 :root {
-    --primary-color: #14833f;
-    --primary-color-transparent: #142e8350;
+    --primary-color: #1fc4cf;
     /* Azul principal */
     --secondary-color: #5BC0EB;
     /* Celeste */
-    --body-color: #e7e7e7;
+    --body-color: #1c2e2a;
     --box-color: #fff;
     /* Blanco */
     --text-color: #343A40;
@@ -115,4 +114,56 @@ header nav a i {
     padding: 1rem 2rem;
     border: solid 1px;
     box-shadow: 0 0 15px -5px #0007;
+}
+
+
+#servicios {
+    border: solid 1px red;
+    width: 100vw;
+    height: 100vh;
+}
+
+#servicios h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--primary-color);
+}
+
+#servicios .img {
+    width: 60vw;
+    height: 60vw;
+    /* border: solid 1px red; */
+}
+
+#servicios .instalacion .img {
+    background-image: url(../img/instalación.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 1rem;
+}
+
+#servicios article {
+    display: block;
+    z-index: 2;
+    /* border: solid 1px blue; */
+    width: 60vw;
+    max-width: 60vw;
+    margin: -40vw 2rem auto auto;
+    background-color: #0002;
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0008;
+    border: solid 1px #fff1;
+    color: #fff;
+}
+
+#servicios article h2 {
+    color: var(--primary-color);
+    padding: 1rem 0;
+}
+
+#servicios article p {
+    line-height: 1.5;
 }
