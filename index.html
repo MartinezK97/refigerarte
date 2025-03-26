@@ -8,10 +8,19 @@
     <meta id="theme-color-meta" name="theme-color" content="#f00">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JQuery -->
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"
+        integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
+        integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+    <script src="./assets/js/menu.js"></script>
 </head>
 
 <body>
@@ -24,18 +33,23 @@
             <a href="#"><i class="fa fa-hand-holding-dollar"></i> Presupuestos</a>
             <a href="#"><i class="fa fa-envelope"></i> Contacto</a>
         </nav>
-        <button class="btn-menu">
-            <i class="fa fa-bars"></i>
-        </button>
+
     </header>
     <!-- PORTADA DEL SITIO -->
     <section id="portada">
-        <h1>Tu confort<br>es nuestra<br>prioridad</h1>
-
+        <h1>Tu <span class="bold">confort</span><br>es nuestra<br><span class="bold">prioridad</span></h1>
         <a href="https://wa.me/+59898760446?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20presupuesto">
-            <i class="fab fa-whatsapp"></i>
-            Solicitá
-            presupuesto</a>
+            <i class="fab fa-whatsapp"></i> Solicitá presupuesto
+        </a>
+    </section>
+    <section id="menu" class="hide">
+        <button class="btn-menu">
+            <i class="fa fa-bars"></i>
+        </button>
+        <a href="#"><i class="fa fa-home"></i> Inicio</a>
+        <a href="#"><i class="fa fa-wrench"></i> Servicios</a>
+        <a href="#"><i class="fa fa-hand-holding-dollar"></i> Presupuestos</a>
+        <a href="#"><i class="fa fa-envelope"></i> Contacto</a>
     </section>
 
     <!-- VantaJS -->
@@ -52,7 +66,9 @@
             minHeight: 200.00,
             minWidth: 200.00,
             highlightColor: 0xfff,
-            midtoneColor: 0xff4a
+            midtoneColor: 0xf1ff,
+            lowlightColor: 0xffd0,
+            speed: 2.00
         })
     </script>
 

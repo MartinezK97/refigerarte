@@ -41,7 +41,7 @@ header {
     align-content: center;
     padding: 0 1rem;
     backdrop-filter: blur(15px);
-    z-index: 9;
+    z-index: 8;
 }
 
 header .logo {
@@ -97,6 +97,14 @@ header nav a i {
     margin-top: -4rem;
 }
 
+#portada h1 {
+    font-weight: 500;
+}
+
+#portada .bold {
+    font-weight: 700;
+}
+
 #portada a {
     background-color: var(--primary-color);
     font-size: 1.5rem;
@@ -106,4 +114,5 @@ header nav a i {
     color: #fff;
     padding: 1rem 2rem;
     border: solid 1px;
+    box-shadow: 0 0 15px -5px #0007;
 }
