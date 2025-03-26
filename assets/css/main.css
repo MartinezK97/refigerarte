@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #14836b;
+    --primary-color-transparent: #14836b75;
+    /* Azul principal */
+    --secondary-color: #5BC0EB;
+    /* Celeste */
+    --body-color: #e7e7e7;
+    --box-color: #fff;
+    /* Blanco */
+    --text-color: #343A40;
+    /* Gris oscuro */
+    --accent-color: #FF6B35;
+    /* Naranja para botones o detalles */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--body-color);
+}
+
+header {
+    background-color: #0005;
+    border-bottom: solid 1px #0006;
+    position: sticky;
+    top: 0;
+    height: 4rem;
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    align-content: center;
+    padding: 0 1rem;
+    backdrop-filter: blur(15px);
+    z-index: 9;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 1.75rem;
+    color: #fff;
+}
+
+header .btn-menu {
+    display: none;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    align-items: center;
+    align-content: center;
+    max-width: max-content;
+    grid-gap: 1.75rem;
+    margin: auto 0 auto auto;
+}
+
+header nav a {
+    display: block;
+    max-width: max-content;
+    color: #fff;
+    align-self: center;
+    display: grid;
+    grid-gap: 0.25rem;
+    align-content: center;
+    grid-template-columns: 1rem max-content;
+}
+
+header nav a i {
+    font-size: 0.8rem;
+    align-self: center;
+}
+
+#portada {
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+    height: calc(100vh);
+    min-height: calc(100vh);
+    max-height: calc(100vh);
+    display: grid;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 0 0 10px #0004;
+    margin-top: -4rem;
+}

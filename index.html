@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a RefigerArte</title>
+    <meta id="theme-color-meta" name="theme-color" content="#f00">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <a class="logo" href="#">RefrigerArte</a>
+        <nav>
+            <a href="#"><i class="fa fa-home"></i> Inicio</a>
+            <a href="#"><i class="fa fa-wrench"></i> Servicios</a>
+            <a href="#"><i class="fa fa-hand-holding-dollar"></i> Presupuestos</a>
+            <a href="#"><i class="fa fa-envelope"></i> Contacto</a>
+        </nav>
+        <button class="btn-menu">
+            <i class="fa fa-bars"></i>
+        </button>
+    </header>
+    <!-- PORTADA DEL SITIO -->
+    <section id="portada">
+        <h1>Tu comfort<br>es nuestra<br>prioridad</h1>
+    </section>
+
+    <!-- VantaJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+
+    <script>
+        VANTA.FOG({
+            el: "#portada",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0x3c00ff,
+            midtoneColor: 0xff0000,
+            lowlightColor: 0xffff,
+            speed: 1.60
+        })
+    </script>
+
+</body>
+
+</html>
