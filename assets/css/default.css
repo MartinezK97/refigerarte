@@ -1,0 +1,27 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.colr-green {
+    color: rgb(5, 131, 5);
+}
+
+.color-primary {
+    color: var(--primary-color);
+}
+
+.db {
+    display: block;
+}
+
+.fz-1-5 {
+    font-size: 1.5rem;
+}
+
+.fz-2 {
+    font-size: 2rem;
+}

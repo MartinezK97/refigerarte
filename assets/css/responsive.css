@@ -52,7 +52,7 @@
         grid-column: 1/3;
     }
 
-    #servicios p {
+    #servicios>p {
         grid-column: 1/3;
         font-size: 1.5rem;
     }
