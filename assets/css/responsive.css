@@ -3,6 +3,10 @@
         display: none;
     }
 
+    #menu {
+        display: grid !important;
+    }
+
     header .btn-menu {
         display: block;
         background: transparent;
@@ -26,6 +30,8 @@
         font-size: 1.75rem;
 
     }
+
+
 
 
 }
