@@ -103,6 +103,7 @@ header nav a i {
 
 #portada h1 {
     font-weight: 500;
+    color: #fff;
 }
 
 #portada .bold {
@@ -510,6 +511,7 @@ header nav a i {
     text-align: center;
     border-bottom: solid 1px #eee;
     padding-bottom: 1rem;
+    width: 100%;
 }
 
 #testimonios .box .comentario {
