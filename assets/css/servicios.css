@@ -1,8 +1,9 @@
 #servicios {
     /* border: solid 1px red; */
     min-height: 100vh;
+    max-height: max-content;
     padding: 1rem;
-    width: clamp(500px, 100%, 1000px);
+    width: 100%;
     margin: 0 auto;
 }
 

@@ -8,11 +8,7 @@
     <title>Bienvenido a RefigerArte</title>
     <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
     <meta id="theme-color-meta" name="theme-color" content="#f00">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="./assets/css/menu.css">
-    <link rel="stylesheet" href="./assets/css/default.css">
-    <link rel="stylesheet" href="./assets/css/servicios.css">
+
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -24,11 +20,20 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
         integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
+
+    <!-- JS -->
     <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/effects.js"></script>
 
-
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/default.css">
-    <link rel="stylesheet" href="http://www.localhost/refrigerarte/assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/servicios.css">
+    <link rel="stylesheet" href="./assets/css/default.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/effects.css">
 </head>
 
 <body>
@@ -81,7 +86,7 @@
         </p>
         <div class="content-services dg gtc-2 ">
             <!-- Instalacion -->
-            <article class="service br-10 w100 h100 pr dg gtc-2 instalacion">
+            <article class="service br-10 w100 h100 pr dg gtc-2 instalacion" id="service_1">
                 <div class="img br-10 "></div>
                 <div class="description dg ac-center box-shadow">
                     <h3 class="color-primary">Instalación</h3>
@@ -93,7 +98,7 @@
                 </div>
             </article>
             <!-- Mantenimiento -->
-            <article class="service br-10 w100 h100 pr  dg gtc-2 mantenimiento">
+            <article class="service br-10 w100 h100 pr  dg gtc-2 mantenimiento" id="service_2">
                 <div class="description dg ac-center box-shadow">
                     <h3 class="color-primary">Mantenimiento</h3>
                     <p>
@@ -108,7 +113,7 @@
                 <div class="img br-10"></div>
             </article>
             <!-- Reparaciones -->
-            <article class="service br-10 w100 h100 pr dg gtc-2 reparaciones">
+            <article class="service br-10 w100 h100 pr dg gtc-2 reparaciones" id="service_3">
                 <div class="img br-10"></div>
                 <div class="description dg ac-center box-shadow">
                     <h3 class="color-primary">Reparaciones</h3>
@@ -123,7 +128,7 @@
                 </div>
             </article>
             <!-- Recargas -->
-            <article class="service br-10 w100 h100 pr dg gtc-2 recargas">
+            <article class="service br-10 w100 h100 pr dg gtc-2 recargas" id="service_4">
                 <div class="description dg ac-center box-shadow">
                     <h3 class="color-primary">Recargas</h3>
                     <p>
@@ -153,59 +158,64 @@
             estratégico de hogares y negocios que buscan soluciones integrales, duraderas y adaptadas a sus necesidades
             reales.</p>
 
-        <div class="contactos" id="contactos">
-            <h1 class="gc-1-3">Contactate con nosotros</h1>
-            <article class="persona">
-                <img src="./assets/img/carlos.PNG" alt="Foto de Carlos">
+    </section>
+    <div class="contactos ta-center" id="contactos">
+        <h1 class="gc-1-3 color-primary ta-center pad-bm-2 gc-1-3">Contactate con nosotros</h1>
+
+        <div class="dg gg-1 gtc-2 maxw-max mar-0-a mar-tp-2 fundadores">
+            <article class="persona box box-shadow br-10">
+                <img src="./assets/img/carlos.PNG" class="mar-tp-2" alt="Foto de Carlos">
                 <p class="mar-0 mar-tp-1">Carlos Gonzalez</p>
                 <span class="db ta-center color-placeholder mar-bm-1">Fundador</span>
                 <a class="color-primary " href="mailto:kevinmartinez@refrigerarte.uy">carlosgonzalez@refrigerarte.uy</a>
             </article>
-            <article class="persona">
-                <img src="./assets/img/kevin.PNG" alt="Foto de Kevin">
+            <article class="persona  box box-shadow br-10">
+                <img src="./assets/img/kevin.PNG" class="mar-tp-2" alt="Foto de Kevin">
                 <p class="mar-0 mar-tp-1">Kevin Martínez</p>
                 <span class="db ta-center color-placeholder mar-bm-1">Co-Fundador</span>
                 <a class="color-primary " href="mailto:kevinmartinez@refrigerarte.uy">kevinmartinez@refrigerarte.uy</a>
             </article>
-
         </div>
-        <section id="why">
-            <h2 class=" fz-2 color-primary" id="why">¿Por qué RefrigerArte?</h2>
-            <div class="detacados">
-                <p>
-                    <i class="fa fa-circle-check db fz-2"></i>
-                    <span class="fw-6 db ta-center mar-bm-1"> Expertos en<br>climatización</span>
-                    No somos técnicos comunes. Nuestro equipo está calificado y se actualiza constantemente para dominar
-                    las
-                    últimas tecnologías en climatización.
-                <p>
-                    <i class="fa fa-screwdriver-wrench fz-2"></i>
-                    <span class="fw-6 db ta-center mar-bm-1">
-                        Soluciones<br>a tu medida:
-                    </span>
-                    Desde pequeños hogares hasta grandes locales comerciales, diseñamos proyectos que
-                    optimizan la eficiencia energética sin sacrificar tu presupuesto.
-                </p>
-                <p>
-                    <i class="fa fa-handshake-simple fz-2"></i>
-                    <span class="fw-6 db ta-center mar-bm-1">
-                        Comprometidos<br>con la calidad:
-                    </span>
-                    No creemos en reparaciones temporales. Usamos repuestos originales y herramientas de
-                    precisión para
-                    garantizar que cada trabajo sea definitivo.
-                </p>
-                <p>
-                    <i class="fa fa-shield-halved fz-2"></i>
-                    <span class="fw-6 db ta-center mar-bm-1">
-                        Tranquilidad<br> y Seguridad
-                    </span>
-                    Realizamos instalaciones siguiendo normas de seguridad internacionales y ofrecemos
-                    mantenimientos preventivos para evitar problemas a futuro.
-                </p>
-            </div>
-        </section>
+    </div>
+
+    <section id="why">
+        <h1 class=" fz-2 color-primary ta-center mar-tp-2 mar-bm-2 mar-tp-2">¿Por qué RefrigerArte?</h1>
+        <div class="destacados dg gtc-2 gg-10 pad-1">
+            <article class="box box-shadow br-10 pad-1">
+                <i class="fa fa-circle-check db fz-2 color-primary mar-1 ta-center"></i>
+                <span class="fw-6 db ta-center mar-bm-1"> Expertos en<br>climatización</span>
+                No somos técnicos comunes. Nuestro equipo está calificado y se actualiza constantemente para dominar
+                las
+                últimas tecnologías en climatización.
+            </article>
+            <article class="box box-shadow br-10 pad-1">
+                <i class="fa fa-screwdriver-wrench db fz-2 color-primary mar-1 ta-center"></i>
+                <span class="fw-6 db ta-center mar-bm-1">
+                    Soluciones<br>a tu medida:
+                </span>
+                Desde pequeños hogares hasta grandes locales comerciales, diseñamos proyectos que
+                optimizan la eficiencia energética sin sacrificar tu presupuesto.
+            </article>
+            <article class="box box-shadow br-10 pad-1">
+                <i class="fa fa-handshake-simple db fz-2 color-primary mar-1 ta-center"></i>
+                <span class="fw-6 db ta-center mar-bm-1">
+                    Comprometidos<br>con la calidad:
+                </span>
+                No creemos en reparaciones temporales. Usamos repuestos originales y herramientas de
+                precisión para
+                garantizar que cada trabajo sea definitivo.
+            </article>
+            <article class="box box-shadow br-10 pad-1">
+                <i class="fa fa-shield-halved db fz-2 color-primary mar-1 ta-center"></i>
+                <span class="fw-6 db ta-center mar-bm-1">
+                    Tranquilidad<br> y Seguridad
+                </span>
+                Realizamos instalaciones siguiendo normas de seguridad internacionales y ofrecemos
+                mantenimientos preventivos para evitar problemas a futuro.
+            </article>
+        </div>
     </section>
+
     <section id="testimonios">
         <h1 class="fz-2 color-primary">Testimonios de nuestros clientes</h1>
         <p>Conocé algunas de las reseñas de nuestros clientes sobre los servicios que brindamos. Ellos ya confiaron en

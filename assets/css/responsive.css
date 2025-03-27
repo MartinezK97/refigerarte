@@ -38,7 +38,11 @@
     }
 
 
-    #quienessomos .contactos {
+
+
+
+
+    #contactos {
         grid-template-columns: 1fr;
     }
 
