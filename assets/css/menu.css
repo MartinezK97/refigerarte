@@ -5,7 +5,7 @@
     height: 100vh;
     right: 0;
     top: 0;
-    width: clamp(7rem, 95%, 15rem);
+    width: 20rem;
     z-index: 9;
     display: none;
     grid-auto-rows: min-content;
@@ -29,6 +29,7 @@
     color: #fff;
     transform: translate(calc(-100% - 1rem), 1rem);
     border: none;
+    text-shadow: 0 0 1px #0003;
 }
 
 #menu a {

@@ -18,14 +18,25 @@
         box-shadow: 0 0 25px -10px #0008;
     }
 
-    #portada {
+    #portada h1 {
         font-size: 3rem;
+    }
 
+    #portada h3 {
+        font-size: 2rem;
     }
 
     #portada a {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
+
+    #servicios .content-services {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+        grid-gap: 6rem !important;
+        margin: 0 auto;
+    }
+
 
     #quienessomos .contactos {
         grid-template-columns: 1fr;
@@ -34,7 +45,7 @@
 
 }
 
-
+/* 
 
 @media(width > 1200px) {
     #servicios {
@@ -68,4 +79,4 @@
         width: 300px;
         height: 275px;
     }
-}
+} */

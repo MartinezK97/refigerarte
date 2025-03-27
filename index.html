@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Bienvenido a RefigerArte</title>
+    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
     <meta id="theme-color-meta" name="theme-color" content="#f00">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
     <link rel="stylesheet" href="./assets/css/default.css">
+    <link rel="stylesheet" href="./assets/css/servicios.css">
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -22,98 +25,127 @@
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"
         integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script>
     <script src="./assets/js/menu.js"></script>
+
+
+    <link rel="stylesheet" href="./assets/css/default.css">
+    <link rel="stylesheet" href="http://www.localhost/refrigerarte/assets/css/grid.css">
 </head>
 
 <body>
     <!-- Encabezado -->
     <header>
-        <a class="logo" href="#">RefrigerArte</a>
+        <a class="home dg gtc-1_5-a ac-center as-center fz-2" href="#">
+            <i class="logo as-center"></i>
+            <span class="db as-center">RefrigerArte</span>
+        </a>
         <nav>
-            <a href="#"><i class="fa fa-home"></i> Inicio</a>
-            <a href="#"><i class="fa fa-wrench"></i> Servicios</a>
-            <a href="#"><i class="fa fa-hand-holding-dollar"></i> Presupuestos</a>
-            <a href="#"><i class="fa fa-envelope"></i> Contacto</a>
+            <a href="#portada"><i class="fa fa-home"></i> Inicio</a>
+            <a href="#servicios"><i class="fa fa-wrench"></i> Servicios</a>
+            <a href="#testimonios"><i class="fa fa-user-check"></i> Testimonios</a>
+            <a href="#contactos"><i class="fa fa-envelope"></i> Contactos</a>
         </nav>
 
     </header>
+
     <!-- PORTADA DEL SITIO -->
     <section id="portada">
-        <h1>Tu <span class="bold">confort</span><br>es nuestra<br><span class="bold">prioridad</span></h1>
-        <a href="https://wa.me/+59898760446?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20presupuesto">
-            <i class="fab fa-whatsapp"></i> Solicitar presupuesto
-        </a>
+        <h1>
+            <span class="fw-6">Expertos</span>
+            en<br> <span class="fw-6">climatización</span><br>
+            de <span class="fw-6">espacios.</span>
+        </h1>
+        <h3>Tu <span class="fw-6">confort</span> es<br>nuestra <span class="fw-6">prioridad</span>.</h3>
+        <a class="wpp fz-1-25"
+            href="https://wa.me/+59898760446?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20presupuesto">
+            <i class="fab fa-whatsapp"></i> Contactanos ahora</a>
     </section>
     <!-- MENU -->
     <section id="menu" class="hide">
-        <button class="btn-menu">
+        <button class="btn-menu maxw-max color-primary">
             <i class="fa fa-bars"></i>
         </button>
-        <a href="#"><i class="fa fa-home"></i> Inicio</a>
-        <a href="#"><i class="fa fa-wrench"></i> Servicios</a>
-        <a href="#"><i class="fa fa-hand-holding-dollar"></i> Presupuestos</a>
-        <a href="#"><i class="fa fa-envelope"></i> Contacto</a>
+        <a href="#portada"><i class="fa fa-home"></i> Inicio</a>
+        <a href="#servicios"><i class="fa fa-wrench"></i> Servicios</a>
+        <a href="#quienessomos"><i class="fa fa-hand-holding-dollar"></i> ¿Quienes somos?</a>
+        <a href="#why"><i class="fa fa-envelope"></i> ¿Por qué RefrigerArte?</a>
+    </section>
+    <a href="http://wa.me/+59898760446" id="fixed-wpp-button" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <section id="servicios" class="">
+        <h1 class="color-primary fz-2 ta-center pad-2">Nuestros Servicios</h1>
+        <p class="pad-05-2 mar-bm-4">
+            Todos nuestros servicios se realizan con garantía de calidad y eficiencia. Nos aseguramos de que cada
+            trabajo se realice
+            de manera profesional y cumpla con los más altos estándares de seguridad.
+        </p>
+        <div class="content-services dg gtc-2 ">
+            <!-- Instalacion -->
+            <article class="service br-10 w100 h100 pr dg gtc-2 instalacion">
+                <div class="img br-10 "></div>
+                <div class="description dg ac-center box-shadow">
+                    <h3 class="color-primary">Instalación</h3>
+                    <p class="lineH-1-5">Instalamos tu equipo de manera segura y eficiente, garantizando un rendimiento
+                        óptimo y prolongando la vida útil del equipo.</p>
+                    <a class="wpp border maxw-max mar-a-0-a-a fz-1 pad-05-1 db br-100" href=""><i
+                            class="fab fa-whatsapp"></i>
+                        Solicitar servicio</a>
+                </div>
+            </article>
+            <!-- Mantenimiento -->
+            <article class="service br-10 w100 h100 pr  dg gtc-2 mantenimiento">
+                <div class="description dg ac-center box-shadow">
+                    <h3 class="color-primary">Mantenimiento</h3>
+                    <p>
+                        Ofrecemos limpieza profunda de filtros, revisión de componentes y ajustes necesarios para evitar
+                        fallas y mejorar la
+                        eficiencia energética
+                    </p>
+                    <a target="_blank" class="wpp border maxw-max mar-a-0-a-a fz-1 pad-05-1 db br-100"
+                        href="https://wa.me/+59898760446?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20el%20servicio%20de%20mantenimiento%20y%20limpieza%20de%20equipos"><i
+                            class="fab fa-whatsapp"></i> Solicitar servicio</a>
+                </div>
+                <div class="img br-10"></div>
+            </article>
+            <!-- Reparaciones -->
+            <article class="service br-10 w100 h100 pr dg gtc-2 reparaciones">
+                <div class="img br-10"></div>
+                <div class="description dg ac-center box-shadow">
+                    <h3 class="color-primary">Reparaciones</h3>
+                    <p>
+                        Si tu equipo presenta fallas, diagnosticamos el problema y realizamos las reparaciones
+                        necesarias.
+
+                    </p>
+                    <a target="_blank" class="wpp border maxw-max mar-a-0-a-a fz-1 pad-05-1 db br-100"
+                        href="https://wa.me/+59898760446?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20el%20servicio%20de%20recarga%20de%20l%C3%ADquido%20refrigerante"><i
+                            class="fab fa-whatsapp"></i> Solicitar servicio</a>
+                </div>
+            </article>
+            <!-- Recargas -->
+            <article class="service br-10 w100 h100 pr dg gtc-2 recargas">
+                <div class="description dg ac-center box-shadow">
+                    <h3 class="color-primary">Recargas</h3>
+                    <p>
+
+                        Si tu equipo presenta fallas, diagnosticamos el problema y realizamos las reparaciones
+                        necesarias.
+                    </p>
+                    <a target="_blank" class="wpp border maxw-max mar-a-0-a-a fz-1 pad-05-1 db br-100"
+                        href="https://wa.me/+59898760446?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20el%20servicio%20de%20recarga%20de%20l%C3%ADquido%20refrigerante">
+                        <i class="fab fa-whatsapp"></i> Solicitar servicio</a>
+                </div>
+                <div class="img br-10"></div>
+            </article>
+        </div><!-- fin content -->
     </section>
 
-    <section id="servicios">
-        <h1>Nuestros Servicios</h1>
-        <p class="presentacionservicios">
-            Todos nuestros servicios se realizan con garantía de calidad y eficiencia. Nos aseguramos de que cada
-            trabajo se realice de manera profesional
-            y cumpla con los más altos estándares de seguridad.
-        </p>
-        <!-- INSTALACION -->
-        <div class="servicio instalacion">
-            <div class="img instalacion"></div>
-            <article class="descripcion">
-                <h2>Instalación</h2>
-                <p>Instalamos tu equipo de manera segura y eficiente,
-                    garantizando un rendimiento óptimo y prolongando la vida útil del equipo.</p>
-                <a target="_blank"
-                    href="https://wa.me/+59898760446?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20servicio%20de%20instalaci%C3%B3n%20de%20equipos%20de%20aire%20acondicionado"><i
-                        class="fab fa-whatsapp"></i><span>Solicitar<span></a>
-            </article>
-        </div>
-        <!-- MANTENIMIENTO  -->
-        <div class="servicio mantenimiento">
-            <article class="descripcion">
-                <h2>Mantenimiento</h2>
-                <p>Ofrecemos limpieza profunda de filtros, revisión de componentes y ajustes necesarios para evitar
-                    fallas y mejorar la eficiencia energética</p>
-                <a target="_blank"
-                    href="https://wa.me/+59898760446?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20el%20servicio%20de%20mantenimiento%20y%20limpieza%20de%20equipos"><i
-                        class="fab fa-whatsapp"></i><span>Solicitar</span></a>
-            </article>
-            <div class="img mantenimiento"></div>
-        </div>
-        <!-- RECARGAS -->
-        <div class="servicio recargas">
-            <div class="img recargas"></div>
-            <article class="descripcion">
-                <h2>Recargas</h2>
-                <p>Si tu equipo no enfría, es posible que necesite una recarga de gas. Revisamos fugas y
-                    recargamos tu equipo</p>
-                <a target="_blank"
-                    href="https://wa.me/+59898760446?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20el%20servicio%20de%20recarga%20de%20l%C3%ADquido%20refrigerante"><i
-                        class="fab fa-whatsapp"></i> <span>Solicitar</span></a>
-            </article>
-        </div>
-        <!-- REPARACIONES -->
-        <div class="servicio reparaciones">
-            <article class="descripcion">
-                <h2>Reparaciones</h2>
-                <p>Si tu equipo presenta fallas, diagnosticamos el problema y
-                    realizamos las reparaciones necesarias.</p>
-                <a target="_blank"
-                    href="https://wa.me/+59898760446?text=Hola,%20me%20gustar%C3%ADa%20solicitar%20el%20servicio%20de%20recarga%20de%20l%C3%ADquido%20refrigerante"><i
-                        class="fab fa-whatsapp"></i><span>Solicitar</span> </a>
-            </article>
-            <div class="img reparaciones"></div>
-        </div>
-    </section>
+
+
 
     <section id="quienessomos">
         <h1 class="fz-2">¿Quiénes Somos?</h1>
-        <p class="bold">RefrigerArte: Expertos en Transformar Espacios Confortables</p>
+        <p class="fw-6">RefrigerArte: Expertos en Transformar Espacios Confortables</p>
         <p>En RefrigerArte, no solo instalamos o reparamos equipos de aire acondicionado: creamos ambientes ideales
             donde el confort se une al ahorro energético.<br><br>
             Con más de 7 años de experiencia en el sector, nos hemos convertido en
@@ -121,70 +153,76 @@
             estratégico de hogares y negocios que buscan soluciones integrales, duraderas y adaptadas a sus necesidades
             reales.</p>
 
-        <div class="contactos">
-            <article class="persona">
-                <img src="./assets/img/kevin.PNG" alt="Foto de Kevin">
-                <p>Kevin Martínez</p>
-                <a class="color-primary " href="mailto:kevinmartinez@refrigerarte.uy">kevinmartinez@refrigerarte.uy</a>
-            </article>
+        <div class="contactos" id="contactos">
+            <h1 class="gc-1-3">Contactate con nosotros</h1>
             <article class="persona">
                 <img src="./assets/img/carlos.PNG" alt="Foto de Carlos">
-                <p>Carlos Gonzalez</p>
+                <p class="mar-0 mar-tp-1">Carlos Gonzalez</p>
+                <span class="db ta-center color-placeholder mar-bm-1">Fundador</span>
                 <a class="color-primary " href="mailto:kevinmartinez@refrigerarte.uy">carlosgonzalez@refrigerarte.uy</a>
             </article>
-        </div>
+            <article class="persona">
+                <img src="./assets/img/kevin.PNG" alt="Foto de Kevin">
+                <p class="mar-0 mar-tp-1">Kevin Martínez</p>
+                <span class="db ta-center color-placeholder mar-bm-1">Co-Fundador</span>
+                <a class="color-primary " href="mailto:kevinmartinez@refrigerarte.uy">kevinmartinez@refrigerarte.uy</a>
+            </article>
 
-        <h2 class=" fz-2 color-primary">¿Por qué RefrigerArte?</h2>
-        <div class="detacados">
-            <p>
-                <i class="fa fa-circle-check db fz-2"></i>
-                <span class="bold db"> Expertos en climatización</span>
-                No somos técnicos comunes. Nuestro equipo está calificado y se actualiza constantemente para dominar las
-                últimas tecnologías en climatización.
-            <p>
-                <i class="fa fa-screwdriver-wrench fz-2"></i>
-                <span class="bold db">
-                    Soluciones<br> a tu medida:
-                </span>
-                Desde pequeños hogares hasta grandes locales comerciales, diseñamos proyectos que
-                optimizan la eficiencia energética sin sacrificar tu presupuesto.
-            </p>
-            <p>
-                <i class="fa fa-handshake-simple fz-2"></i>
-                <span class="bold db">
-                    Comprometidos<br> con la calidad:
-                </span>
-                No creemos en reparaciones temporales. Usamos repuestos originales y herramientas de
-                precisión para
-                garantizar que cada trabajo sea definitivo.
-            </p>
-            <p>
-                <i class="fa fa-shield-halved fz-2"></i>
-                <span class="bold db">
-                    Tranquilidad<br> y Seguridad
-                </span>
-                Realizamos instalaciones siguiendo normas de seguridad internacionales y ofrecemos
-                mantenimientos preventivos para evitar problemas a futuro.
-            </p>
         </div>
+        <section id="why">
+            <h2 class=" fz-2 color-primary" id="why">¿Por qué RefrigerArte?</h2>
+            <div class="detacados">
+                <p>
+                    <i class="fa fa-circle-check db fz-2"></i>
+                    <span class="fw-6 db ta-center mar-bm-1"> Expertos en<br>climatización</span>
+                    No somos técnicos comunes. Nuestro equipo está calificado y se actualiza constantemente para dominar
+                    las
+                    últimas tecnologías en climatización.
+                <p>
+                    <i class="fa fa-screwdriver-wrench fz-2"></i>
+                    <span class="fw-6 db ta-center mar-bm-1">
+                        Soluciones<br>a tu medida:
+                    </span>
+                    Desde pequeños hogares hasta grandes locales comerciales, diseñamos proyectos que
+                    optimizan la eficiencia energética sin sacrificar tu presupuesto.
+                </p>
+                <p>
+                    <i class="fa fa-handshake-simple fz-2"></i>
+                    <span class="fw-6 db ta-center mar-bm-1">
+                        Comprometidos<br>con la calidad:
+                    </span>
+                    No creemos en reparaciones temporales. Usamos repuestos originales y herramientas de
+                    precisión para
+                    garantizar que cada trabajo sea definitivo.
+                </p>
+                <p>
+                    <i class="fa fa-shield-halved fz-2"></i>
+                    <span class="fw-6 db ta-center mar-bm-1">
+                        Tranquilidad<br> y Seguridad
+                    </span>
+                    Realizamos instalaciones siguiendo normas de seguridad internacionales y ofrecemos
+                    mantenimientos preventivos para evitar problemas a futuro.
+                </p>
+            </div>
+        </section>
     </section>
     <section id="testimonios">
-        <h1 class="fz-2">Testimonios de nuestros clientes</h1>
+        <h1 class="fz-2 color-primary">Testimonios de nuestros clientes</h1>
         <p>Conocé algunas de las reseñas de nuestros clientes sobre los servicios que brindamos. Ellos ya confiaron en
             nosotros.
             Vos también
-            podés sumate a nuestra comunidad de clientes satisfechos.</p>
+            podés sumarte a nuestra comunidad de clientes satisfechos.</p>
         <section>
 
             <div class="box">
-                <img src="./assets/img/user1.png" alt="foto de perfil">
+                <img src="./assets/img/user1.png" class="border-light" alt="Foto de perfil">
                 <p class="name">Matías, 25 años</p>
                 <p class="comentario">Los llamé hoy y en menos de 2 horas ya estaba disfrutando mi nuevo aire
                     acondicionado.
                     Super recomendables! Muchas gracias por todo.</p>
             </div>
             <div class="box">
-                <img src="./assets/img/user2.PNG" alt="Foto de perfil">
+                <img src="./assets/img/user2.PNG" class="border-light" alt="Foto de perfil">
                 <p class="name">Mariana, 34 años</p>
                 <p class="comentario">El servicio fue excelente. Me explicaron todo con claridad y dejaron el equipo
                     funcionando perfectamente. ¡Muy
@@ -201,7 +239,7 @@
 
     </section>
     <div id="footer">
-        <div class="rrss">
+        <div class="rrss maxw-max mar-a-0-a-a">
             <p>Seguinos en nuestras redes sociales</p>
             <div>
                 <a href=""><i class="fab fa-tiktok fz-2"></i></a>
@@ -210,12 +248,12 @@
                 <a href=""><i class="fab fa-x-twitter fz-2"></i></a>
             </div>
         </div>
-        <div class="numero">
+        <div class="numero  maxw-max mar-a-0-a-a">
             <a class="db" href="tel:+59898760446"><i class="fab fa-whatsapp"></i> 098 760 446</a>
             <a class="db" href="tel:+59898136159"><i class="fab fa-whatsapp"></i> 098 136 159</a>
 
         </div>
-        <div class="horarios">
+        <div class="horarios  maxw-max">
             <p class="bold">Horarios de atención</p>
             <div>
                 <p>De Lunes a Viernes<br>de 10:00 a 18:00hs</p>
