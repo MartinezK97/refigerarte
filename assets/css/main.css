@@ -358,7 +358,7 @@ header nav a i {
 #testimonios .box {
     background-color: #fff;
     border-radius: 10px;
-    width: clamp(200px, 45%, 330px);
+    width: clamp(150px, 45%, 330px);
     padding: 0.5rem 1.5rem;
     scroll-snap-align: start;
     flex-shrink: 0;
